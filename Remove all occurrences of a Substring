@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string str = "the cat and the dog";
+	string sub = "the";
+	size_t pos = str.find(sub);
+
+	while (pos != string::npos)
+	{
+		str.erase(pos, sub.length());
+		pos = str.find(sub, pos);
+
+		
+	}
+	cout << str  << endl;
+}
+	
