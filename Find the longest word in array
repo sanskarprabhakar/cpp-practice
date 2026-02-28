@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string arr[] = { "apple", "banana", "kiwi", "strawberry", "mango"};
+	int size = sizeof(arr) / sizeof(arr[0]);
+	string Longest = arr[0];
+
+	for (int i = 1; i < size; i++)
+	{
+		if (arr[i].length() > Longest.length())
+		{
+			Longest = arr[i];
+		}
+	}
+	cout << Longest << endl;
+	cin.get();
+}
+	
